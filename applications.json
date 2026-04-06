@@ -393,6 +393,22 @@
       }
     ]
   },
+  "Claude": {
+    "tray_and_multi_window": [
+      {
+        "kind": "Exe",
+        "id": "claude.exe",
+        "matching_stratey": "Equals"
+      }
+    ],
+    "layered": [
+      {
+        "kind": "Exe",
+        "id": "claude.exe",
+        "matching_stratey": "Equals"
+      }
+    ]
+  },
   "Clementine": {
     "tray_and_multi_window": [
       {
