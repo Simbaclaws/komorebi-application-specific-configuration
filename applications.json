@@ -141,9 +141,23 @@
     "tray_and_multi_window": [
       {
         "kind": "Exe",
-        "id": "anki.exe",
+        "id": "Anki.exe",
         "matching_strategy": "Equals"
       }
+    ],
+    "floating": [
+      [
+        {
+          "kind": "Exe",
+          "id": "Anki.exe",
+          "matching_strategy": "Equals"
+        },
+        {
+          "kind": "Title",
+          "id": "- Anki",
+          "matching_strategy": "DoesNotEndWith"
+        }
+      ]
     ]
   },
   "ApplicationFrameHost": {
@@ -2035,6 +2049,11 @@
       },
       {
         "kind": "Exe",
+        "id": "PowerToys.QuickAccess.exe",
+        "matching_strategy": "Equals"
+      },
+      {
+        "kind": "Exe",
         "id": "Microsoft.CmdPal.UI.exe",
         "matching_strategy": "Equals"
       }
@@ -2778,6 +2797,18 @@
           "id": " - Microsoft Visual Studio",
           "matching_strategy": "DoesNotContain"
         }
+      ],
+      [
+        {
+          "kind": "Exe",
+          "id": "DevHub.exe",
+          "matching_strategy": "Equals"
+        },
+        {
+          "kind": "Class",
+          "id": "ThreadedWaitDialog",
+          "matching_strategy": "Equals"
+        }
       ]
     ],
     "ignore": [
@@ -3126,6 +3157,11 @@
       {
         "kind": "Exe",
         "id": "msiexec.exe",
+        "matching_strategy": "Equals"
+      },
+      {
+        "kind": "Class",
+        "id": "MsiDialogCloseClass",
         "matching_strategy": "Equals"
       }
     ]
